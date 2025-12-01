@@ -77,7 +77,7 @@ export function Hero() {
               Hi, I'm{' '}
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-accent via-primary to-secondary bg-clip-text text-transparent animate-gradient">
-                  Alex Johnson
+                  Albin Philip
                 </span>
                 <motion.span
                   className="absolute -inset-2 bg-gradient-to-r from-accent/20 via-primary/20 to-secondary/20 blur-2xl -z-10"
