@@ -12,6 +12,13 @@ This is an animated portfolio site focused on presenting professional work with 
 
 ## Essential Features
 
+### Netflix-Style Intro Animation
+- **Functionality**: 4-second cinematic intro animation that plays once per session, featuring a bold letter reveal with particle burst, expanding rings, gradient glows, and "ta-dum" sound effect
+- **Purpose**: Creates an unforgettable brand introduction with Netflix-level polish that establishes premium quality immediately
+- **Trigger**: First page load only (uses sessionStorage to track), bypassed on subsequent refreshes
+- **Progression**: Screen fades in black → Letter "P" scales up with bounce → Radial glow expands → Particle burst radiates outward → Rings expand and fade → Sound effect plays → Fade to homepage
+- **Success criteria**: Animation completes in exactly 4 seconds, sound plays smoothly, particles animate at 60fps, only shows once per session
+
 ### Animated Hero Section
 - **Functionality**: Full-screen hero with particle field background, animated gradient overlays, glowing text effects, and parallax scrolling
 - **Purpose**: Creates an unforgettable first impression with cinematic entrance animations and establishes premium brand identity
