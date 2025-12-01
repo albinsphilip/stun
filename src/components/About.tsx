@@ -107,7 +107,7 @@ export function About() {
                       }}
                       transition={{ duration: 3, repeat: Infinity }}
                     >
-                      AJ
+                      AP
                     </motion.div>
                   </div>
                   <motion.div

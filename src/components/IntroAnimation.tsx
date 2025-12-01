@@ -9,7 +9,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
   const [audioPlayed, setAudioPlayed] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(onComplete, 4500)
+    const timer = setTimeout(onComplete, 5000)
 
     if (!audioPlayed) {
       const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
@@ -115,7 +115,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
             opacity: [0, 0.6, 0.4, 0],
           }}
           transition={{
-            duration: 4,
+            duration: 4.5,
             times: [0, 0.3, 0.7, 1],
             ease: "easeOut"
           }}
@@ -129,7 +129,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
             opacity: [0, 0.5, 0.3, 0],
           }}
           transition={{
-            duration: 4,
+            duration: 4.5,
             times: [0, 0.3, 0.7, 1],
             ease: "easeOut",
             delay: 0.1
@@ -158,7 +158,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
             opacity: [0, 0.8, 0.4, 0],
           }}
           transition={{
-            duration: 3.5,
+            duration: 4.2,
             ease: "easeOut",
             delay: 0.3
           }}
@@ -178,7 +178,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
             opacity: [0, 0.6, 0.3, 0],
           }}
           transition={{
-            duration: 3.8,
+            duration: 4.5,
             ease: "easeOut",
             delay: 0.5
           }}
@@ -209,7 +209,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
               opacity: [0, 0.8, 0]
             }}
             transition={{
-              duration: 2.5,
+              duration: 3.2,
               delay: 0.6 + (i * 0.03),
               ease: "easeOut"
             }}
@@ -242,7 +242,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 scale: [0, 1.2, 0.8, 0]
               }}
               transition={{
-                duration: 2.5,
+                duration: 3.2,
                 delay: 0.8 + Math.random() * 0.6,
                 ease: "easeOut"
               }}
@@ -256,7 +256,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0.2, 0.1, 0] }}
         transition={{
-          duration: 3,
+          duration: 4.5,
           times: [0, 0.2, 0.6, 1],
           ease: "easeInOut"
         }}

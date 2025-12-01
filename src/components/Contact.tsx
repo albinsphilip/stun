@@ -15,8 +15,8 @@ const contactMethods = [
   {
     icon: EnvelopeSimple,
     label: 'Email',
-    value: 'alex.johnson@email.com',
-    href: 'mailto:alex.johnson@email.com',
+    value: 'albin.philip@email.com',
+    href: 'mailto:albin.philip@email.com',
     color: 'from-accent to-cyan-400',
   },
   {
@@ -186,7 +186,7 @@ export function Contact() {
                   <Button
                     size="lg"
                     className="relative bg-accent text-accent-foreground hover:bg-accent/90 px-12 py-7 text-lg font-bold overflow-hidden group"
-                    onClick={() => window.location.href = 'mailto:alex.johnson@email.com'}
+                    onClick={() => window.location.href = 'mailto:albin.philip@email.com'}
                   >
                     <span className="relative z-10 flex items-center gap-3">
                       <EnvelopeSimple size={24} weight="bold" />
@@ -239,7 +239,7 @@ export function Contact() {
           className="text-center mt-20 text-sm text-muted-foreground"
         >
           <p className="flex items-center justify-center gap-2">
-            © 2024 Alex Johnson. Crafted with
+            © 2024 Albin Philip. Crafted with
             <motion.span
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 1, repeat: Infinity }}
