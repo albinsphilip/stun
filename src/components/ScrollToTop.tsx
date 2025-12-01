@@ -32,40 +32,33 @@ export function ScrollToTop() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.8, y: 20 }}
+          exit={{ opacity: 0, scale: 0.5, y: 20 }}
           className="fixed bottom-8 right-8 z-50"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           <Button
             onClick={scrollToTop}
             size="icon"
-            className="relative w-14 h-14 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg"
+            className="relative w-16 h-16 rounded-2xl bg-accent text-accent-foreground hover:bg-accent/90 shadow-2xl shadow-accent/30 glass-effect border-2 border-accent/20"
           >
-            <svg className="absolute inset-0 w-full h-full -rotate-90">
-              <circle
-                cx="28"
-                cy="28"
-                r="26"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-                className="text-accent-foreground/20"
-              />
+            <svg className="absolute inset-0 w-full h-full -rotate-90 rounded-2xl overflow-hidden">
               <motion.circle
-                cx="28"
-                cy="28"
-                r="26"
+                cx="32"
+                cy="32"
+                r="28"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="3"
                 fill="none"
                 className="text-accent-foreground"
-                strokeDasharray={163}
-                strokeDashoffset={163 - (163 * scrollProgress) / 100}
+                strokeDasharray={176}
+                strokeDashoffset={176 - (176 * scrollProgress) / 100}
                 strokeLinecap="round"
               />
             </svg>
-            <ArrowUp size={24} weight="bold" />
+            <ArrowUp size={28} weight="bold" className="relative z-10" />
           </Button>
         </motion.div>
       )}
